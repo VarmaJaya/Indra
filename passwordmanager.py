@@ -94,9 +94,9 @@ window.config(padx=20, pady=20)
 
 canvas = Canvas(width=200, height=200, highlightthickness=0)
 
-logo_img = PhotoImage(file="indra.png")
+logo_img = PhotoImage(file=r"C:\Users\ASUS\Pictures\Screenshots\var.png")
 canvas.create_image(100, 100, image=logo_img)
-canvas.grid(column=1, row=0)
+canvas.grid(column=2, row=0)
 
 website_label = Label(text="Website:", font=("italic", 20))
 website_label.grid(row=1, column=0, sticky=W)
@@ -111,13 +111,13 @@ password_label.grid(row=3, column=0, sticky=W)
 generate_button_width = 18
 
 button_generate = Button(text="Generate Password", command=generate_password, width=generate_button_width)
-button_generate.grid(column=2, row=3)
+button_generate.grid(column=3, row=3)
 
 # Define the width of the "Search" button to match the "Generate password" button
 button_search_width = generate_button_width
 
 button_search = Button(text="Search", command=find_password, width=button_search_width)
-button_search.grid(column=2, row=1)
+button_search.grid(column=3, row=1)
 
 website_entry = Entry(width=35)
 website_entry.grid(row=1, column=1, columnspan=2)
