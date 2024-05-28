@@ -89,7 +89,7 @@ def find_password():
 # -----------------------------------------------------UI -----------------------------#
 
 window = Tk()
-window.title("Password Manager")
+window.title("Welocme to Password manager")
 window.config(padx=20, pady=20)
 
 canvas = Canvas(width=200, height=200, highlightthickness=0)
